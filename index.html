@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notion AI Chat</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <!-- Gerbang login -->
+    <section id="gate" class="gate">
+      <div class="gate-card">
+        <h1>Notion AI Chat</h1>
+        <p>Masuk atau daftar untuk mulai mengobrol.</p>
+        <button id="loginBtn">Login / Sign up</button>
+      </div>
+    </section>
+
+    <!-- Aplikasi chat (tersembunyi sampai login) -->
+    <main class="app hidden" id="app">
+      <header class="topbar">
+        <h1>Notion AI Chat</h1>
+        <div class="actions">
+          <span id="userEmail" class="email"></span>
+          <button id="newChat" class="ghost">Chat baru</button>
+          <button id="logoutBtn" class="ghost">Logout</button>
+        </div>
+      </header>
+      <section id="chat" class="chat"></section>
+      <p id="status" class="status"></p>
+      <form id="form" class="composer">
+        <textarea id="input" placeholder="Tulis pesan… (Enter kirim, Shift+Enter baris baru)" rows="1"></textarea>
+        <button id="sendBtn" type="submit">Kirim</button>
+      </form>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
