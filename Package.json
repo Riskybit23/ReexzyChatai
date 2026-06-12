@@ -1,0 +1,16 @@
+{
+  "name": "notion-ai-chat",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI chat with login + cloud sync to Notion, deployable to Netlify",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.15"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.38.0"
+  }
+}
